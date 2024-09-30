@@ -1,0 +1,72 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d2d; 
+    padding: 15px 60px;
+    color: #fff;
+    width: 100vw; 
+}
+  
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+  
+.navbar-logo img {
+    width: 110px; 
+  
+}
+@keyframes colorAnimation {
+    0% { color: #d3b89e; }
+    33% { color: #ff6347; } 
+    66% { color: yellow; }
+    100% { color: #4682b4; } 
+}
+
+h1 {
+    text-decoration: bold;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 250px;
+    animation: colorAnimation 3s infinite;
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    list-style: none;
+}
+  
+.navbar-links li {
+    margin: 0 20px; 
+}
+  
+.navbar-links a {
+    text-decoration: none;
+    color: #fff; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    font-size: 14px; 
+}
+  
+.navbar-links a:hover {
+    color: #d3b89e; 
+}
+  
+/* Appointment Button */
+.appointment-btn {
+    background-color: #d3b89e; 
+    border: none;
+    padding: 10px 20px;
+    color: #2d2d2d;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.appointment-btn:hover {
+    background-color: #c1a387;
+}
