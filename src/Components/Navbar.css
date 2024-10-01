@@ -6,7 +6,7 @@
     background-color: #2d2d2d; 
     padding: 15px 60px;
     color: #fff;
-    width: 100vw; 
+    width: 100%; 
 }
   
 .navbar-logo {
@@ -33,28 +33,37 @@ h1 {
     animation: colorAnimation 3s infinite;
 }
 
-/* Navbar Links */
+
 .navbar-links {
-    display: flex;
     list-style: none;
-}
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
   
-.navbar-links li {
-    margin: 0 20px; 
-}
+  .navbar-links li {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
   
-.navbar-links a {
+  .navbar-links li:hover {
+    color: #d3b89e;
+  }
+  
+  .navbar-links a {
     text-decoration: none;
-    color: #fff; 
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600; 
-    font-size: 14px; 
-}
+    color: #f8f7f7; 
+  }
   
-.navbar-links a:hover {
-    color: #d3b89e; 
-}
+  .navbar-links a:hover {
+    color: #3498db;
+  }
   
+
 /* Appointment Button */
 .appointment-btn {
     background-color: #d3b89e; 

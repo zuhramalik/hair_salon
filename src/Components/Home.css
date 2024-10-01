@@ -8,8 +8,8 @@
 /* Container for the image */
 .img_container {
   position: relative;
-  width: 100vw; 
-  height: 95vh; 
+  width: 100%; 
+  
  
 }
 
