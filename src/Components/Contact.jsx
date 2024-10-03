@@ -9,7 +9,6 @@ const Contact = () => {
     message: ''
   });
 
-  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -18,16 +17,15 @@ const Contact = () => {
     }));
   };
 
-  
   const handleSubmit = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        'service_tr6yhtt',  
-        'template_f06p8ar', 
-        e.target,           
-        'RjgS6ivW-snqMoHBI' 
+        'service_y34nzgp',
+        'template_qenq5wb',
+        e.target,
+        'u2Ma7BjURFmPG4Y0Y'
       )
       .then(
         (result) => {
@@ -40,12 +38,19 @@ const Contact = () => {
         }
       );
 
-   
     setFormData({
       name: '',
       email: '',
       message: ''
     });
+  };
+
+  const handleWhatsApp = () => {
+    const whatsappNumber = '+923197549097';
+    const message = `Name:Fatima ${formData.name}\nEmail:zuhraa003@gmail.com ${formData.email}\nMessage:Hello ${formData.message}`;
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappLink, '_blank');
   };
 
   return (
@@ -85,6 +90,9 @@ const Contact = () => {
         ></textarea>
 
         <button type="submit" className="button">Submit</button>
+        <button type="button" className="whatsapp-button" onClick={handleWhatsApp}>
+          open WhatsApp
+        </button>
       </form>
     </fieldset>
   );
