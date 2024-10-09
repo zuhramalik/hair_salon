@@ -5,7 +5,7 @@
   font-family: sans-serif;
 }
 
-/* Container for the image */
+
 .img_container {
   position: relative;
   width: 100%; 
@@ -13,7 +13,7 @@
  
 }
 
-/* Image styling */
+
 .img_container img {
   width: 100%;
   height: 100%;
@@ -21,7 +21,7 @@
   transition: opacity 3s ease-in-out;
 }
 
-/* Text content styling */
+
 .content {
   position: absolute;
   top: 50%; 
@@ -33,19 +33,19 @@
   animation: zoomInText 1s ease-in-out; 
 }
 
-/* Heading styling */
+
 .content h2 {
   font-size: 3rem; 
   margin-bottom: 10px; 
 }
 
-/* Paragraph styling */
+
 .content p {
   font-size: 1.5rem;
   margin: 10px 0; 
 }
 
-/* Button styling */
+
 .appointment-btn {
   background-color: #b89b79; 
   border: none; 
@@ -56,7 +56,7 @@
   font-size: 1.2rem; 
 }
 
-/* Zoom-in text animation */
+
 @keyframes zoomInText {
   0% {
     transform: translate(-50%, -50%) scale(0.8); 

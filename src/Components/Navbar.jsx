@@ -15,11 +15,11 @@ const Navbar = () => {
       <ul className="navbar-links">
     <Link to="/"><li>HOME</li></Link>
       <Link to="/About"><li>ABOUT</li></Link>
-      <Link to="/Services"><li>SERVICES</li></Link>
+      <Link to="/Services"><li>Services</li></Link>
       <Link to="/pages"><li>PAGES</li></Link>
       <Link to="/blog"><li>BLOG</li></Link>
       <Link to="/contact"><li>Contact</li></Link>
-      <button className="appointment-btn">MAKE APPOINTMENT</button>
+      <button className="appointment-btn">Book an APPOINTMENT</button>
       </ul>
     </nav>
   );

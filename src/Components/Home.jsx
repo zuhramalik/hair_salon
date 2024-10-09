@@ -36,7 +36,7 @@ const Home = () => {
             ? 'Experience the finest grooming services.'
             : 'Precision and care for every client.'}
         </p>
-        <button className="appointment-btn">Make Appointment</button>
+        <button className="appointment-btn">Book an Appointment</button>
       </div>
     </div>
   );
