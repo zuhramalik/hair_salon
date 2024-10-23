@@ -1,0 +1,126 @@
+.about-container {
+    padding: 50px;
+    background: linear-gradient(135deg, #fff5e6, #fdfefe);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    animation: fadeIn 1s ease-in;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-header h1 {
+    font-size: 3em;
+    color: #ff5e57;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: slideInDown 1s ease;
+}
+
+.about-subtitle {
+    font-size: 1.4em;
+    color: #ff9e85;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    gap: 30px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    color: #ff5e57;
+    margin-bottom: 15px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.about-text p {
+    font-size: 1.15em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #4b4b4b;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(23, 8, 186, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+.about-values {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.value-card {
+    background: linear-gradient(135deg, #ffdac1, #ffd1a5);
+    padding: 25px;
+    width: 30%;
+    text-align: center;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 163, 108, 0.3);
+}
+
+.value-card:hover {
+    transform: scale(1.08);
+    background-color: #ff8e73;
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(255, 143, 108, 0.6);
+}
+
+.value-card h3 {
+    color: #ff5e57;
+    font-size: 1.7em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.value-card p {
+    font-size: 1.1em;
+    color: #4b4b4b;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

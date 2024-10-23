@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Services.css';
 
 const Services = () => {
@@ -29,7 +30,7 @@ const Services = () => {
     contact: ''
   });
 
-  const [selectedService, setSelectedService] = useState(null); 
+  const [selectedService, ] = useState(null); 
 
   const handleChange = (e) => {
     setFormData({
@@ -43,30 +44,23 @@ const Services = () => {
     console.log('Booking submitted:', formData);
   };
 
-  const handleServiceClick = (service) => {
-    setSelectedService(service); 
-    console.log('Service selected:', service);
-  };
-
   return (
     <div className="service-page">
       <div className="hero">
         <h1>Luxury Hair Services</h1>
-        <button>Book an Appointment</button>
+        <button >Book an Appointment</button>
       </div>
 
       <div className="service-list">
         {services.map((service, index) => (
           <div key={index} className="service-card">
             <img src={service.image} alt={service.title} />
-            <h3>{service.title}</h3>
             <p>{service.description}</p>
-            <button onClick={() => handleServiceClick(service)}>Select {service.title}</button>
+            <Link to="/ServiceDetails" className="btn">Read More</Link>
           </div>
         ))}
       </div>
 
-     
       {selectedService && (
         <div className="selected-service">
           <h2>{selectedService.title}</h2>
